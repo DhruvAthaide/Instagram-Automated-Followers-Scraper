@@ -37,9 +37,9 @@ username = "Enter Your Username/Email"
 password = "Enter Your Password"
 ```
 
-If you want to change how many hours it will scrape each profile's followers list, then change the following line to suit the time you want (Scrolling for above 2 hours might get the account suspended):
+If you want to change how many hours it will scrape each profile's followers list, then change the following line to suit the time you want (Scrolling for above 2 hours might get the account suspended if done too frequently):
 ```bash
-duration_seconds = 20  # 20 seconds
+duration_seconds = 2 * 60 * 60  # 2 Hours
 ```
 
 If you want to change how many scrolls per second, then change the following line to suit your neeeds:
