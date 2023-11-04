@@ -94,7 +94,7 @@ for profile_link in profile_links:
         actions.move_to_element(target_element).click().perform()
 
         # Scroll the main profile page for 20 seconds
-        duration_seconds = 20  # 20 seconds
+        duration_seconds = 2 * 60 * 60  # 2 Hours
         scroll_interval = 1  # Scroll every 1 second (1 scroll per second)
         total_scrolls = int(duration_seconds / scroll_interval)  # Ensure total_scrolls is an integer
         for _ in range(total_scrolls):
