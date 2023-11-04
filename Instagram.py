@@ -92,7 +92,7 @@ for profile_link in profile_links:
         # Use ActionChains to put the focus on the followers page so that it can scroll
         actions = ActionChains(driver)
         actions.move_to_element(target_element).click().perform()
-
+    
         # Scroll the main profile page for 20 seconds
         duration_seconds = 2 * 60 * 60  # 2 Hours
         scroll_interval = 1  # Scroll every 1 second (1 scroll per second)
