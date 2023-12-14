@@ -21,15 +21,14 @@ data = pd.read_excel("profile_links.xlsx", header=None, names=['Profile Links'])
 
 profile_links = data['Profile Links'].tolist()
 
-# Configuring the Chrome driver and handling Notification Alert
+# Configuring the Chrome driver and Handling Notification Alert
 options = webdriver.ChromeOptions()
-prefs = {"profile.default_content_setting_values.notifications": 2}
-options.add_experimental_option("prefs", prefs)
-
+prefs = {"profile.default_content_setting_values.notifications": 2,"profile.default_content_setting_values.cookies":2}
 # Fullscreen mode
 options.add_argument("--start-maximized")
+options.add_experimental_option("prefs", prefs)
+driver = webdriver.Chrome(options=options)
 
-driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
 
 # Opening the Instagram Website
 driver.get("https://www.instagram.com/")
