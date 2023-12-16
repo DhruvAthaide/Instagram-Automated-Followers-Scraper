@@ -21,9 +21,9 @@ cd Instagram-Automated-Followers-Scraper
 pip install -r requirements.txt
 ```
 
-Then, you need to create a XLSX File or Excel File and name it:
+Then, you need to create a CSV File or Excel File and name it:
 ```bash
-Name: profile_links.xlsx
+Name: profile_links.csv
 ```
 
 Then, you need to set the following column name in the Excel File and paste the Instagram profile's link you want to message in this column:
@@ -47,7 +47,7 @@ If you want to change how many scrolls per second, then change the following lin
 scroll_interval = 1  # Scroll every 1 second (1 scroll per second)
 ```
 
-Then, you can simply run the python file and not touch anything and it will execute the message sending to the Instagram profile's provided in the XLSX or Excel File and all the profile link's followers will appear in a csv file in the RefinedData Folder and if you want the Unrefined Data it will be in the UnrefinedData Folder.
+Then, you can simply run the python file and not touch anything and it will execute the message sending to the Instagram profile's provided in the CSV or Excel File and all the profile link's followers will appear in a csv file in the RefinedData Folder and if you want the Unrefined Data it will be in the UnrefinedData Folder.
 
 ## Authors
 

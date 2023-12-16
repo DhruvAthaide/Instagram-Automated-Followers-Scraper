@@ -16,10 +16,10 @@ import csv
 username = "Enter Your Username/Email"
 password = "Enter Your Password"
 
-# XLSX file to read all user profiles provided
-data = pd.read_excel("profile_links.xlsx", header=None, names=['Profile Links'])
+# CSV file to read all user profiles provided
+data = pd.read_csv("profile_links.csv", header=None, names=['Profile Links'], encoding='latin1', skipinitialspace=True, skip_blank_lines=True)
 
-profile_links = data['Profile Links'].tolist()
+profile_links = data['Profile Links'].str.strip().tolist()
 
 # Configuring the Chrome driver and Handling Notification Alert
 options = webdriver.ChromeOptions()
